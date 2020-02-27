@@ -1,0 +1,6 @@
+// Override default variables before the import of bootsrap
+//example of override variable:
+//$body-bg: #000;
+// Import Bootstrap and its default variables
+// ~ is the reference to node_modules
+@import '~bootstrap/scss/bootstrap.scss';

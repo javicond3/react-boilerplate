@@ -3,6 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app';
 import { AppContainer } from 'react-hot-loader';
+import './assets/scss/custom_bootstrap.scss'
+import './assets/scss/main.scss'
 
 //configuration to use hot-loader to perserve sate of components when changes occur
 const render = (Component) => {

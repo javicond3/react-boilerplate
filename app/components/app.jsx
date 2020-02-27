@@ -1,5 +1,6 @@
 import React from 'react';
-import '../assets/scss/main.scss';
+import { Button } from 'react-bootstrap';
+
 
 export default class App extends React.Component {
 
@@ -21,6 +22,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h2>{this.state.helloWorld}</h2>
+        <Button variant="primary">Primary</Button>
       </div>
 
     );
