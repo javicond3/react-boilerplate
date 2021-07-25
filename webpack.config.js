@@ -5,7 +5,6 @@ module.exports = {
     entry: resolve(__dirname, 'app/index.jsx'),
 
     output: {
-        //debo darle una ruta absoluta
         path: resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
@@ -15,7 +14,6 @@ module.exports = {
         contentBase: resolve(__dirname, 'app'),
         hot: true
     },
-    //lo que queramos que traduzca de los imports que se encuentre en los javascripts
     module: {
         rules: [
             {
@@ -46,16 +44,13 @@ module.exports = {
     },
 
     resolve: {
-        // resuelve extensiones al no indicarlas los import
         extensions: ['.js', '.jsx', '.es6']
     },
 
     plugins: [
-        //para copiar el archivo a la carpeta build
         new HtmlWebpackPlugin({
             template: resolve(__dirname, 'app/index.html'),
             filename: 'index.html',
-            //evitas que inyecte el bundle.js en el index.html
             inject: true,
         }),
     ]
